@@ -1,6 +1,7 @@
-import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/layout/headNav/headNav";
 import "./globals.css"
-import HeadNav from "@/components/layout/headNav/headNav";
+import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/layout/footer/footer";
 
 export default function RootLayout({
   children,
@@ -11,15 +12,15 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeProvider
-        attribute={`class`}
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-        >
-          <HeadNav />
-          {children}
-        </ThemeProvider>
-        
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            {children}
+            <Footer />
+          </ThemeProvider>
       </body>
     </html>
   );

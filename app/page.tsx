@@ -1,13 +1,14 @@
-import Trial from "@/components/layout/headNav/trial";
-import ModeToggle from "@/components/ui/toggle/darkToggle";
+import AboutSection from "@/components/HomePage/AboutSection";
+import Hero from "@/components/HomePage/hero";
+import PortfolioSection from "@/components/HomePage/PortfolioSection";
+
 
 export default function Home() {
   return (
     <>
-      <h3>Home page</h3> 
-      {/* <ModeToggle /> */}
-      <Trial />
+      <Hero />
+      <PortfolioSection />
+      <AboutSection />
     </>
-    
   )
 }
