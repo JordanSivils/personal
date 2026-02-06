@@ -7,27 +7,12 @@ const Footer = () => {
       <div >
         <h1 className="text-sm lg:text-md">Jordan Sivils © {new Date().getFullYear()}</h1>
       </div>
-      <div className="pr-4">
-        <NavigationMenu className="m-2">
-          <NavigationMenuList className="flex gap-1 lg:gap-4">
-            <NavigationMenuItem>
-              <NavigationMenuLink className="text-sm lg:text-md cursor-pointer hover:underline">About</NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink className="text-sm lg:text-md cursor-pointer hover:underline">Portfolio</NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink className="text-sm lg:text-md cursor-pointer hover:underline">Blog</NavigationMenuLink>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-      </div>
       <p>-</p>
       <div>
         <NavigationMenu className="m-2">
           <NavigationMenuList className="flex gap-1 lg:gap-4">
             <NavigationMenuItem>
-              <NavigationMenuLink className="text-sm lg:text-md cursor-pointer hover:underline">
+              <NavigationMenuLink href="https://github.com/JordanSivils" target="_blank" className="text-sm lg:text-md cursor-pointer hover:underline">
                 <svg
                     viewBox="0 0 24 24"
                     className="h-15 w-15 lg:h-20 lg:w-20"

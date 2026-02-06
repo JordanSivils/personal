@@ -1,4 +1,6 @@
 import { siClerk, siDocker, siExpress, siNodedotjs, siPostgresql, siPrisma, siReact, siRedis, siTailwindcss, siTypescript, siZod } from "simple-icons"
+import { Button } from "../ui/button"
+import { SquareArrowOutUpRight } from "lucide-react"
 
 const Hero = () => {
     const items = [
@@ -14,18 +16,21 @@ const Hero = () => {
     ]
     const radius = 140
     return (
+        <div className="flex flex-col gap-4 items-center">
+
+        
         <div className="p-4 flex flex-col-reverse w-full
         md:flex-row md:justify-evenly
-        items-center  gap-2 border-b bg-ring"
+        items-center  gap-2 "
         >
-            <div className="flex flex-col gap-2 max-w-80">
-                <h2 className="text-2xl font-bold">The Stack</h2>
+            <div className="flex flex-col gap-2 max-w-88">
+                <h2 className="text-2xl font-bold">The Full Stack</h2>
 
                 <h3 className="font-semibold">Server & Data</h3>
                 <p>
                     I work backend-first. Node.js and TypeScript form the core, with PostgreSQL and Redis
                     running locally in Docker. Prisma handles data access, Zod defines runtime-safe
-                    schemas plus validation, and Clerk Authorizes. Express ties it all together.
+                    schemas plus validation, and Clerk Authorizes. Express usually ties it all together, but im starting to experiment with fastify.
                 </p>
 
                 <h3 className="font-semibold">Client</h3>
@@ -68,6 +73,13 @@ const Hero = () => {
         })}
     </div>
     
+    </div>
+    <Button className="max-w-26 cursor-pointer">
+        <a className="w-full h-full" href="https://github.com/JordanSivils" target="_blank" rel="noopener noreferrer">
+            Github
+        </a>
+        <SquareArrowOutUpRight />
+    </Button>
     </div>
         
     )

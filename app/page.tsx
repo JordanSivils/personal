@@ -6,9 +6,12 @@ import PortfolioSection from "@/components/HomePage/PortfolioSection";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <PortfolioSection />
-      <AboutSection />
+    <div className="flex flex-col gap-4">
+        <Hero />
+        <PortfolioSection />
+        <AboutSection />
+    </div>
+      
     </>
   )
 }
